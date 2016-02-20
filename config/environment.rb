@@ -1,15 +1,18 @@
 require "sinatra/reloader" if development?
 
-# set up sass
+#require flash
+require 'sinatra/flash'
+require_relative '../lib/sinatra-flash'
+register Sinatra::Flash
 
-require "sass/plugin/rack"
+# Setup app to use SASS
+require 'sass/plugin/rack'
 Sass::Plugin.options[:style] = :compact
-use Sass::Plugin::Rack 
+use Sass::Plugin::Rack
 
-# set up asset pipeline
-
+# Setup the asset pipeline
 register Sinatra::AssetPack
-assets do 
+assets do
   js :application, [
     '/bower_components/jquery/dist/jquery.min.js',
     '/bower_components/bootstrap/dist/js/bootstrap.min.js',
@@ -19,23 +22,22 @@ assets do
     '/bower_components/bootstrap/dist/css/bootstrap.min.css',
     '/stylesheets/style.css'
   ]
-
-  js_compression :jsmin 
-  css_compression :simple
+  js_compression  :jsmin    # :jsmin | :yui | :closure | :uglify
+  css_compression :simple   # :simple | :sass | :yui | :sqwish
 end
 
-#Set up some helpers constants(CAPITAL LETTERS) to make our lives a little easier
-APP_ROOT = Pathname.new(File.expand_path('../../',__FILE__))
+# Set the views directory
+configure do
+  enable :sessions
+  set :sessions_secret, ENV['SESSIONS_SECRET'] || "this is a secrect, shhhh"
+  set :views, File.join(Sinatra::Application.root, "app", "views")
+end
+
+# Some helper constants for path-centric logic
+APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 APP_NAME = APP_ROOT.basename.to_s
 
-
-# Set up the views directory 
-
-configure do 
-  set :views, File.join(APP_ROOT, "app", "views")
-end
-
-# require all our models controllers and helpers
-["models", "controllers", "helpers"].each do |folder|
-  Dir[APP_ROOT.join("app", folder, "*.rb")].each { |file| require file }
-end
+# Set up the models, controllers and helpers
+Dir[APP_ROOT.join('app', 'models', '*.rb')].each { |file| require file }
+Dir[APP_ROOT.join('app', 'controllers', '*.rb')].each { |file| require file }
+Dir[APP_ROOT.join('app', 'helpers', '*.rb')].each { |file| require file }

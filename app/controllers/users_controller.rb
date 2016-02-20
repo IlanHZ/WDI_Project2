@@ -1,56 +1,54 @@
-
 # INDEX
-get '/users' do 
+
+get "/users" do
+  authorize!
   @users = User.all
-  erb :'users/index'
+  erb :"users/index"
 end
 
 # NEW
-get 'users/new' do
+get "/users/new" do
+  authorize!
   @user = User.new
-  erb :'users/new'
+  erb :"users/new"
 end
 
 # CREATE
-post '/' do 
+post "/users" do
+  authorize!
   @user = User.new(params[:user])
-  #if all good, show all the users
   if @user.save
     redirect "/users"
-  #if there is an error redirect to do it again not just crash the whole programm (better user experience)
-  else 
-    erb :'users/new'
+  else
+    erb :"users/new"
   end
 end
 
 # SHOW
-get '/users/:id' do 
+get "/users/:id" do
+  authorize!
   @user = User.find(params[:id])
-  if @user 
-    erb :'user/show'
-  else 
+  if @user
+    erb :"users/show"
+  else
     redirect "/users"
   end
 end
 
 # EDIT
-
-get "users/:id/edit" do 
+get "/users/:id/edit" do
+  authorize!
   @user = User.find(params[:id])
-  erb :'users/edit'
+  erb :"users/edit"
 end
 
 # UPDATE
-
-put '/users/:id' do 
+put '/users/:id' do
+  authorize!
   @user = User.find(params[:id])
-  if @user.update{params[:user]}
+  if @user.update(params[:user])
     redirect "/users/#{@user.id}"
   else
-    erb :'users/show'
+    erb :"users/show"
   end
 end
-
-
-
-

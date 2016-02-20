@@ -1,3 +1,4 @@
-get '/' do 
-  erb :'static/home'
+# HOME
+get '/' do
+  redirect "/users"
 end
