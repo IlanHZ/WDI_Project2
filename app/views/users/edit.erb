@@ -1,0 +1,29 @@
+<h2>Edit Profile</h2>
+<form id="register" method="post" action="/users/<%= @user.id %>">
+  <input type="hidden" name="_method" value="put">
+  <div class="form-group">
+    <label for="first_name">First name</label>
+    <input name="user[first_name]" type="text" class="form-control" id="username" placeholder="First name" value="<%= @user.first_name %>">
+  </div>
+  <div class="form-group">
+    <label for="last_name">Last name</label>
+    <input name="user[last_name]" type="text" class="form-control" id="username" placeholder="Last name" value="<%= @user.last_name %>">
+  </div>
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input name="user[username]" type="text" class="form-control" id="username" placeholder="Username" value="<%= @user.username %>">
+  </div>
+  <div class="form-group">
+    <label for="image">Image</label>
+    <input name="user[image]" type="text" class="form-control" id="image" placeholder="Image" value="<%= @user.image %>">
+  </div>
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input name="user[email]" type="email" class="form-control" id="email" placeholder="Email" value="<%= @user.email %>">
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input name="user[password]" type="password" class="form-control" id="password" placeholder="Password">
+  </div>
+  <button type="submit" class="btn btn-default">Register</button>
+</form>
