@@ -9,7 +9,7 @@ post '/login' do
   # find the user by their email address
   user = User.find_by_email(params[:user][:email])
   # if there is a user, check their password is correct
-  if user && user.authenticate(params[:user][:password])
+  if user && user.authenticate(params[:email][:password])
     #log the user in (use " " if we use #{})
     session[:user_id] = user.id
     flash[:success] = "Welcome!"
