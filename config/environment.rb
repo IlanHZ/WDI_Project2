@@ -1,9 +1,9 @@
 require "sinatra/reloader" if development?
 
-#require flash
+#require sinatra flash
 require 'sinatra/flash'
 require_relative '../lib/sinatra-flash'
-register Sinatra::Flash
+register
 
 # Setup app to use SASS
 require 'sass/plugin/rack'
@@ -28,8 +28,10 @@ end
 
 # Set the views directory
 configure do
+
   enable :sessions
-  set :sessions_secret, ENV['SESSIONS_SECRET'] || "this is a secrect, shhhh"
+  set :session_secret, ENV['SESSION_SECRET'] || "this is a secret"
+
   set :views, File.join(Sinatra::Application.root, "app", "views")
 end
 
