@@ -4,9 +4,9 @@ get '/' do
 end
 
 get '/about' do
- erb :about
- end 
+ erb :'static/about'
+end 
 
- get '/contact' do
- erb :contact
- end 
+ # get '/contact' do
+ # erb :contact
+ # end 

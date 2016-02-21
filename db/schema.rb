@@ -11,16 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160221130603) do
+ActiveRecord::Schema.define(version: 20160221162501) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "messages", force: :cascade do |t|
     t.string "message_content"
+    t.string "title"
+    t.string "recipient_id"
+    t.string "sender_id"
   end
 
-  create_table "propertys", force: :cascade do |t|
+  create_table "properties", force: :cascade do |t|
     t.string "address"
     t.string "owner"
     t.string "picures"
@@ -31,16 +34,17 @@ ActiveRecord::Schema.define(version: 20160221130603) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "username"
-    t.string "first_name"
-    t.string "last_name"
-    t.string "email"
-    t.string "gender"
-    t.string "age"
-    t.string "image"
-    t.string "password_digest"
-    t.string "type"
-    t.string "comment"
+    t.string  "username"
+    t.string  "first_name"
+    t.string  "last_name"
+    t.string  "email"
+    t.string  "gender"
+    t.string  "age"
+    t.string  "image"
+    t.string  "password_digest"
+    t.string  "type"
+    t.string  "comment"
+    t.integer "property_id"
   end
 
 end
