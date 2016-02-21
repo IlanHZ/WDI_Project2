@@ -11,10 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160221125219) do
+ActiveRecord::Schema.define(version: 20160221130603) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "messages", force: :cascade do |t|
+    t.string "message_content"
+  end
 
   create_table "propertys", force: :cascade do |t|
     t.string "address"
