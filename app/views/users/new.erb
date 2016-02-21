@@ -22,5 +22,19 @@
     <label for="email">Email address</label>
     <input name="user[email]" type="email" class="form-control" id="email" placeholder="Email">
   </div>
+  <div class="form-group">
+    <label for="gender">Gender</label>
+    <input type="radio" name="gender" value="male"> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other
+  </div>
+  <div class="form-group">
+    <label for="age">Age</label>
+    <input name="user[age]" type="number" class="form-control" id="age" placeholder="age">
+  </div>
+  <div class="form-group">
+    <label for="comments">Comments</label>
+    <input name="user[comments]" type="text" class="form-control" id="comments" placeholder="comments">
+  </div>
   <button type="submit" class="btn btn-default">Create</button>
 </form>
