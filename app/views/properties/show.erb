@@ -9,12 +9,19 @@
       <p>Number of free rooms: <%= @property.number_of_rooms %></p>
       <p>Comments: <%= @property.comment %></p>
     </div>
-    <div class="col-md-6">Owner Profile
+    <div class="col-md-6">Owner Profile 
       <img class="media-object" src="/images/default.png" >
+
+      <p>User Name: <%= @property.user.username %> </p>
+      <p>First Name: <%= @property.user.first_name %> </p>
+      <p>Last Name: <%= @property.user.last_name %> </p>
+      <p>Email: <%= @property.user.email %> </p>
+      <p>Gender: <%= @property.user.gender %> </p>
+      <p>Image: <%= @property.user.image %> </p>
+      <p>Comments: <%= @property.user.comment %> </p>
+
     </div>
   </div>
 </div>
-
-
 
 
