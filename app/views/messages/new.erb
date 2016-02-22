@@ -1,0 +1,17 @@
+<h1>New Message</h1>
+
+<form id="new_message" method="post" action="/messages">
+
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input name="message[title]" type="text" class="form-control" id="title" placeholder="title of your message">
+  </div>
+  <div class="form-group">
+    <label for="content">Content</label>
+    <textarea name="message[content]" type="text" class="form-control" id="content" placeholder="content of your message"></textarea> 
+  </div>
+  
+
+
+  <button type="submit" class="btn btn-default">Send message</button>
+</form>

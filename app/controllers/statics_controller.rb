@@ -1,6 +1,6 @@
 # HOME
 get '/' do
-  redirect "/users"
+  erb :'static/home'
 end
 
 get '/about' do
