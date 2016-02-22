@@ -1,5 +1,5 @@
 class AddSenderId1ToMessages < ActiveRecord::Migration
   def change
-    add_column :messages, :sender_id, :string
+    add_column :messages, :sender_id, :integer
   end
 end
