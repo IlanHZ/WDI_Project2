@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 20160222100042) do
 
   create_table "messages", force: :cascade do |t|
     t.string  "message_content"
-    t.string  "title"
     t.integer "sender_id"
     t.integer "recipient_id"
   end
