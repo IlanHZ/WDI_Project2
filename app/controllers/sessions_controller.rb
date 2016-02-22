@@ -13,7 +13,7 @@ post '/login' do
     #log the user in (use " " if we use #{})
     session[:user_id] = user.id
     flash[:success] = "Welcome!"
-    redirect "users/#{user.id}"
+    redirect "/"
   # otherwise render the login form again
   else
     flash[:danger] = "Username or password incorrect"

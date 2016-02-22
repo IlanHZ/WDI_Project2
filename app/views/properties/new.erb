@@ -8,8 +8,8 @@
     <input name="property[property_type]" type="text" class="form-control" id="type" placeholder="Flat, house,...">
   </div>
   <div class="form-group">
-    <label for="owner">Owner</label>
-    <input name="property[owner]" type="text" class="form-control" id="owner" placeholder="Owner">
+    <label for="owner">Owner: <%= current_user.username %></label>
+    <!-- <input name="property[owner]" type="text" class="form-control" id="owner" placeholder="Owner"> -->
   </div>
   <div class="form-group">
     <label for="address">Address</label>

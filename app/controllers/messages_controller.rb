@@ -15,10 +15,10 @@ end
 # CREATE
 post "/messages" do
   recipient =  User.find(params[:recipient_id])
-
   @message = Message.new(params[:message])
   @message.recipient = recipient
-  @messge.sender = current_user
+  @message.sender = current_user
+  
 
   if @message.save
     redirect "/messages"
