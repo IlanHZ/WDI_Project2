@@ -6,7 +6,11 @@
       <div class="thumbnail">
         <li class="media">
           <div class="media-left">
-          <img class="media-object" src="/images/default.png">
+          <% if property.profile_pic %>
+            <img class="media-object" src="/uploaders/<%= property.profile_pic%>">
+          <% else %>
+            <img class="media-object" src="/images/default.png">
+          <% end %>
               <h3 class="media-heading"><%= property.owner%></h3>
             <p>
             <%= property.price %>
@@ -20,4 +24,5 @@
   </li>
   <% end %>
 </ul>
+
 
