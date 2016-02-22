@@ -1,20 +1,25 @@
-<h2>All messages</h2>
+<h2>My messages</h2>
 <div class="row">
 <ul class="media-list">
+
   <% @messages.each do |message| %>
     <div class="col-lg-3 col-xs-6 col-md-4">
       <div class="thumbnail">
         <li class="media">
-
-            <%= message.title %>
-            <p>
-            <%= message.message_content %>
-            </p>
-          
+          <p>From: </p>
+          <p>Subject: <%= message.title %><p>   
+          <p>Message: <%= message.message_content %></p>
         </div>
       </div>
     </div>
   </li>
   <% end %>
 </ul>
+
+
+
+
+
+
+
 

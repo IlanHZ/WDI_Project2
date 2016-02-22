@@ -14,6 +14,7 @@ end
 # CREATE
 post "/properties" do
   @property = Property.new(params[:property])
+  @property.user = current_user
   if @property.save
     redirect "/properties"
   else

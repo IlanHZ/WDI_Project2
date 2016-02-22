@@ -1,7 +1,7 @@
 # INDEX
 
 get "/messages" do
-  @messages = Message.all
+  @messages = current_user.received_messages
   erb :"messages/index"
 end
 
@@ -18,7 +18,10 @@ post "/messages" do
   @message = Message.new(params[:message])
   @message.recipient = recipient
   @message.sender = current_user
-  
+
+  puts "============================ #{recipient} ==================================="
+  puts "============================ #{current_user} ==================================="
+  puts "============================ #{@message.sender} ==================================="
 
   if @message.save
     redirect "/messages"
