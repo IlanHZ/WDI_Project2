@@ -6,23 +6,22 @@
       <div class="thumbnail">
         <li class="media">
           <div class="media-left">
-            <a href="/users/<%= user.id %>">
+           
               <% if user.image %>
                 <img class="media-object" src="<%= user.image %>" alt="<%=  user.  username %>'s image">
               <% else %>
                 <img class="media-object" src="/images/default.png" alt="<%=    user.username %>'s image">
               <% end %>
-            </a>
+     
           </div>
           <div class="caption">
           <!-- <div class="media-body"> -->
-            <a href="/users/<%= user.id %>">
+           
               <h3 class="media-heading"><%= user.username %></h3>
-            </a>
             <p>
             <%= user.email %>
             </p>
-            <p><a href="#" class="btn btn-primary" role="button">View complete profile</a></p>
+            <p><a href="/users/<%= user.id %>" class="btn btn-primary" role="button">View complete profile</a></p>
             </div>
           </div>
         </div>

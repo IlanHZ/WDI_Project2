@@ -1,4 +1,29 @@
 <div class="row">
-  <div class="col-md-6">Property Informations</div>
-  <div class="col-md-6">Owner Profile</div>
+  <div class="thumbnail">
+    <div class="col-md-6">Property Informations
+      <img class="media-object" src="/images/default.png" >
+      <p>Owner: <%= @property.owner %></p>
+      <p>Price: <%= @property.price %></p>
+      <p>Property type: <%= @property.property_type %></p>
+      <p>Number of free rooms: <%= @property.number_of_rooms %></p>
+      <p>Comments: <%= @property.comment %></p>
+    </div>
+    <div class="col-md-6">Owner Profile
+      <img class="media-object" src="/images/default.png" >
+    </div>
+  </div>
 </div>
+
+<button><a href="/messages/new?recipient_id=<%= @user.id %>">Get in touch </a></button>
+
+
+<!-- create_table "properties", force: :cascade do |t|
+  t.string  "address"
+  t.string  "owner"
+  t.string  "picures"
+  t.string  "property_type"
+  t.string  "number_of_rooms"
+  t.string  "price"
+  t.string  "comment"
+  t.integer "user_id"
+end -->

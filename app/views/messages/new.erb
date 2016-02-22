@@ -3,10 +3,9 @@
 <form id="new_message" method="post" action="/messages">
 
 
-
-
+  <input type="hidden" name="recipient_id" value="<%= @recipient.id %>">
   <div class="form-group">
-    <label for="sender">To:</label><p></p>
+    <label for="sender">To: <%= @recipient.username %></label><p></p>
     <label for="sender">From: <%= current_user.username %></label><p></p>
 
     <label for="title">Subject</label>
