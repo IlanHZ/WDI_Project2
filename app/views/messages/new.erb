@@ -1,17 +1,21 @@
-<h1>New Message</h1>
+<h1>New Messages</h1>
 
 <form id="new_message" method="post" action="/messages">
 
+
+
+
   <div class="form-group">
-    <label for="title">Title</label>
-    <input name="message[title]" type="text" class="form-control" id="title" placeholder="title of your message">
+    <label for="sender">To:</label><p></p>
+    <label for="sender">From: <%= current_user.username %></label><p></p>
+
+    <label for="title">Subject</label>
+    <input name="message[title]" type="text" class="form-control" id="title" placeholder="subject of your message">
   </div>
   <div class="form-group">
-    <label for="content">Content</label>
+    <label for="content">Message</label>
     <textarea name="message[content]" type="text" class="form-control" id="content" placeholder="content of your message"></textarea> 
   </div>
   
-
-
   <button type="submit" class="btn btn-default">Send message</button>
 </form>
