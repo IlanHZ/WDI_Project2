@@ -6,30 +6,20 @@
       <div class="thumbnail">
         <li class="media">
           <div class="media-left">
-           
               <% if user.profile_pic_identifier %>
                 <img class="media-object" src="/uploads/<%= user.profile_pic_identifier %>">
               <% else %>
                 <img class="media-object" src="/images/default.png" alt="<%=    user.username %>'s image">
               <% end %>
-     
           </div>
           <div class="caption">
-          <!-- <div class="media-body"> -->
-           
-              <h3 class="media-heading"><%= user.username %></h3>
-            <p>
-            <%= user.email %>
-            </p>
+            <h3 class="media-heading"><%= user.username %></h3>
             <p><a href="/users/<%= user.id %>" class="btn btn-primary" role="button">View complete profile</a></p>
-            </div>
           </div>
-        </div>
-      </div>
-  </li>
-  </ul>
-  </div>
+        </li>
+      </div> 
+    </div>
   <% end %>
-</ul>
+ </ul>
 </div>
 

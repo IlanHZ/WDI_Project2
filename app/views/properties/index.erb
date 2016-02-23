@@ -1,28 +1,25 @@
 <h2>All properties</h2>
 <div class="row">
-<ul class="media-list">
-  <% @properties.each do |property| %>
-    <div class="col-lg-3 col-xs-6 col-md-4">
-      <div class="thumbnail">
-        <li class="media">
-          <div class="media-left">
-            <% if property.profile_pic_identifier %>
-              <img class="media-object" src="/uploads/<%= property.profile_pic_identifier %>">
-            <% else %>
-              <img class="media-object" src="/images/default.png">
-            <% end %>
+  <ul class="media-list">
+    <% @properties.each do |property| %>
+      <div class="col-lg-3 col-xs-6 col-md-4">
+        <div class="thumbnail">
+          <li class="media">
+            <div class="media-left">
+              <% if property.profile_pic_identifier %>
+                <img class="media-object" src="/uploads/<%= property.profile_pic_identifier %>">
+              <% else %>
+                <img class="media-object" src="/images/default.png">
+              <% end %>
               <h3 class="media-heading"><%= property.owner%></h3>
-            <p>
-            <%= property.price %>
-            </p>
-            <p><a href="/properties/<%= property.id %>" class="btn btn-primary" role="button">Check all the informations about this property </a></p>
+              <p><%= property.price %></p>
+              <p><a href="/properties/<%= property.id %>" class="btn btn-primary" role="button">Check all the informations about this property </a></p>
             </div>
-          </div>
+          </li>
         </div>
       </div>
-    </div>
-  </li>
-  <% end %>
-</ul>
+    <% end %>
+  </ul>
+</div>
 
 

@@ -4,11 +4,12 @@
 <% else %>
   <img class="media-object" src="/images/default.png" alt="<%= @user.username %>'s image">
 <% end %>
-<p><%= @user.first_name %></p>
-<p><%= @user.last_name %></p>
-<p><%= @user.email %></p>
-<p><%= @user.gender %></p>
-<p><%= @user.comment %></p>
+<p>First name: <%= @user.first_name %></p>
+<p>Last name: <%= @user.last_name %></p>
+<p>Email: <%= @user.email %></p>
+<p>Gender: <%= @user.gender %></p>
+<p>Age: <%= @user.age %></p>
+<p>Comment: <%= @user.comment %></p>
 
 
 <button><a href="/messages/new?recipient_id=<%= @user.id %>">Get in touch </a></button>
