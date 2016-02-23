@@ -5,7 +5,7 @@
     <%= error %>
   </div>
 <% end %>
-<form id="register" method="post" action="/register">
+<form id="register" method="post" action="/register"  enctype="multipart/form-data">
   <div class="form-group">
     <label for="first_name">First name</label>
     <input name="user[first_name]" type="text" class="form-control" id="username" placeholder="First name" placeholder="First name">
