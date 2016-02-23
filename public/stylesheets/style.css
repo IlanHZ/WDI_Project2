@@ -1,8 +1,8 @@
-body { background-image: url("../images/background.jpg"); background-size: cover; }
+body { background-image: url("../images/background.jpg"); background-size: cover; color: white; }
 
 .navbar { background-color: rgba(0, 0, 0, 0.1); border-color: #E7E7E7; margin-top: 10px; }
 
-button { background-color: rgba(0, 0, 0, 0.2); border-color: white; margin: 60px; margin-left: 105px; width: 400px; height: 60px; color: white; }
+button { background-color: rgba(0, 0, 0, 0.2); border-color: white; margin: 60px; margin-left: 105px; width: 400px; height: 60px; color: white; font-size: 20px; }
 
 .container-fluid { height: 0px; }
 
