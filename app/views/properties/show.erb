@@ -1,31 +1,30 @@
 <div class="row">
-  <div class="thumbnail">
-    <div class="col-md-6">Property Informations
-     <% if @property.profile_pic_identifier %>
-       <img class="media-object" src="/uploads/<%= @property.profile_pic_identifier %>">
-     <% else %>
-       <img class="media-object" src="/images/default.png">
-     <% end %>
-      
-      <p>Price: <%= @property.price %></p>
-      <p>Property type: <%= @property.property_type %></p>
-      <p>Number of free rooms: <%= @property.number_of_rooms %></p>
-      <p>Comments: <%= @property.comment %></p>
+  <ul class="media-list">
+    <div class="thumbnail">
+      <div class="col-md-6">Property Informations
+       <% if @property.profile_pic_identifier %>
+         <img class="media-object" src="/uploads/<%= @property.profile_pic_identifier %>">
+       <% else %>
+         <img class="media-object" src="/images/default.png">
+       <% end %>
+        
+        <p>Price: <%= @property.price %></p>
+        <p>Property type: <%= @property.property_type %></p>
+        <p>Number of free rooms: <%= @property.number_of_rooms %></p>
+        <p>Comments: <%= @property.comment %></p>
+      </div>
+      <div class="col-md-6">Owner Profile 
+       <% if @property.user.profile_pic_identifier %>
+         <img class="media-object" src="/uploads/<%= @property.user.profile_pic_identifier %>">
+       <% else %>
+         <img class="media-object" src="/images/default.png">
+       <% end %>
+  
+        <p>First Name: <%= @property.user.first_name %> </p>
+        <p>Last Name: <%= @property.user.last_name %> </p> 
+        <p><a href="/users/<%= @property.user.id %>">Check the owner's profil </a></p>
+      </div>
     </div>
-    <div class="col-md-6">Owner Profile 
-     <% if @property.user.profile_pic_identifier %>
-       <img class="media-object" src="/uploads/<%= @property.user.profile_pic_identifier %>">
-     <% else %>
-       <img class="media-object" src="/images/default.png">
-     <% end %>
-
-      <p>First Name: <%= @property.user.first_name %> </p>
-      <p>Last Name: <%= @property.user.last_name %> </p> 
-      <button><a href="/users/<%= @property.user.id %>">Check the owner's profil </a></button>
-
-    </div>
-
-    
-  </div>
+  </ul>
 </div>
 
