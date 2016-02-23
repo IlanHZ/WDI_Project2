@@ -17,28 +17,24 @@ button{
   margin-left: 105px;
   width: 400px;
   height: 60px;
+  color:white;
 
-
-
-    a {
-      color: white;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: none;
-      color:white;
-      font-weight: bold;
-    }
 }
+
+
 
 .container-fluid {
   height: 0px;
 }
 
 
-.thumbnails {
-  background-color: blue;
+.thumbnail {
+  background-color: rgba(0,0,0,0.3);
+  
+}
+
+.thumbnail .caption{
+  color:white;
 }
 #title {
   font-size: 100px;

@@ -2,13 +2,13 @@ body { background-image: url("../images/background.jpg"); background-size: cover
 
 .navbar { background-color: rgba(0, 0, 0, 0.1); border-color: #E7E7E7; margin-top: 10px; }
 
-button { background-color: rgba(0, 0, 0, 0.2); border-color: white; margin: 60px; margin-left: 105px; width: 400px; height: 60px; }
-button a { color: white; text-decoration: none; }
-button a:hover { text-decoration: none; color: white; font-weight: bold; }
+button { background-color: rgba(0, 0, 0, 0.2); border-color: white; margin: 60px; margin-left: 105px; width: 400px; height: 60px; color: white; }
 
 .container-fluid { height: 0px; }
 
-.thumbnails { background-color: blue; }
+.thumbnail { background-color: rgba(0, 0, 0, 0.3); }
+
+.thumbnail .caption { color: white; }
 
 #title { font-size: 100px; color: #FFF; text-align: center; text-shadow: 4px 4px 2px #a5a5a5; }
 
