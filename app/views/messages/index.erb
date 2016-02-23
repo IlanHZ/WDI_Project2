@@ -1,23 +1,25 @@
 <h2>My messages</h2>
 <div class="row">
-<ul class="media-list">
+  <ul class="media-list">
+    <% @messages.each do |message| %>
+      <div class="col-lg-3 col-xs-6 col-md-4">
+        <div class="thumbnail">
+          <li class="media">
+            <h4>From: <%= message.sender.username %> </h4>
+            <p><i>Please, contact me back by <%= message.contact %> : <%= message.contact_input %> </i></p>
+            <p>Subject: <%= message.title %></p>   
+            <p>Message: <%= message.message_content %></p>
+            <p><a href="/users/<%= message.sender_id %>" class="btn btn-primary" role="button">Link to the sender profile </a></p>
 
-  <% @messages.each do |message| %>
-    <div class="col-lg-3 col-xs-6 col-md-4">
-      <div class="thumbnail">
-        <li class="media">
-          <p>From: </p>
-          <p>Contact: <%= message.contact %> </p>
-          <p> <%= message.contact_input %> </p>
-          <p>Subject: <%= message.title %></p>   
-          <p>Message: <%= message.message_content %></p>
-
+          </li>
         </div>
       </div>
-    </div>
-  </li>
-  <% end %>
-</ul>
+    <% end %>
+  </ul>
+</div>
+
+  
+
 
 
 
