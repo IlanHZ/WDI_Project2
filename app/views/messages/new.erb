@@ -17,9 +17,9 @@
   </div>
   <div class="form-group">
     <label for="contact">How do you want <%= @recipient.username %> to contact you ?</label>
-    <input type="radio" name="contact" value="email"> Personal Email<br>
-    <input type="radio" name="contact" value="phone"> Phone<br>
-    <input type="radio" name="contact" value="profil"> Third Act Profile<br>
+    <input type="radio" name="message[contact]" value="email"> Personal Email<br>
+    <input type="radio" name="message[contact]" value="phone"> Phone<br>
+    <input type="radio" name="message[contact]" value="profil"> Third Act Profile<br>
     <input name="message[contact_input]" type="text" class="form-control" id="contact_input" placeholder="Please, enter either your phone number or your email address.">
   </div>
 
