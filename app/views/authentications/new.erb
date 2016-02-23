@@ -5,7 +5,7 @@
     <%= error %>
   </div>
 <% end %>
-<form id="register" method="post" action="/users">
+<form id="register" method="post" action="/users" enctype="multipart/form-data">
 
   <div class="form-group">
     <label for="username">Username</label>
@@ -29,15 +29,15 @@
   </div>
   <div class="form-group">
     <label for="profile_pic">Profile Pic</label>
-    <input name="user[profile_pic]" type="file" class="form-control" id="profile_pic" placeholder="Profile Pic">
+    <input name="user[profile_pic]" type="file" class="form-control" id="profile_pic" placeholder="Profile Picture">
   </div>
-<!--   <div class="form-group">
+  <!-- <div class="form-group">
     <label for="gender">Gender</label>
-    <input type="radio" name="gender" value="male"> Male<br>
-    <input type="radio" name="gender" value="female"> Female<br>
-    <input type="radio" name="gender" value="other"> Other
-  </div> -->
-<!--   <div class="form-group">
+    <input type="radio" name="user[gender]" value="male"> Male<br>
+    <input type="radio" name="user[gender]" value="female"> Female<br>
+    <input type="radio" name="user[gender]" value="other"> Other
+  </div>
+  <div class="form-group">
     <label for="age">Age</label>
     <input name="user[age]" type="number" class="form-control" id="age" placeholder="age">
   </div>

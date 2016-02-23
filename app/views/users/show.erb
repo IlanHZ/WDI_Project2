@@ -1,6 +1,6 @@
 <h2><%= @user.username %></h2>
-<% if @user.profile_pic %>
-  <img class="media-object" src="/uploaders/<%= @user.profile_pic%>" alt="<%= @user.username %>'s image">
+<% if @user.profile_pic_identifier %>
+  <img class="media-object" src="/uploads/<%= @user.profile_pic_identifier %>" alt="<%= @user.username %>'s image">
 <% else %>
   <img class="media-object" src="/images/default.png" alt="<%= @user.username %>'s image">
 <% end %>
