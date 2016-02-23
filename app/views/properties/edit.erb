@@ -2,6 +2,7 @@
 
 
 <form id="share_property" method="post" action="/properties/<%= @property.id %>" enctype="multipart/form-data">
+<input type="hidden" name="_method" value="put">
 
 <div class="form-group">
   <label for="profile_pic">Pictures </label>
