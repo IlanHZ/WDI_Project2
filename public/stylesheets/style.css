@@ -4,6 +4,10 @@ body { background-image: url("../images/background.jpg"); background-size: cover
 
 button { background-color: rgba(0, 0, 0, 0.2); border-color: white; margin: 60px; margin-left: 105px; width: 400px; height: 60px; color: white; font-size: 20px; }
 
+.btn-primary { color: #fff; background-color: rgba(0, 0, 0, 0.43); border: 2px solid white; }
+
+.btn-primary:hover { color: #fff; background-color: rgba(0, 0, 0, 0.43); border: 3px solid white; }
+
 .container-fluid { height: 0px; }
 
 .thumbnail { background-color: rgba(0, 0, 0, 0.3); }
