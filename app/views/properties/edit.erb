@@ -1,6 +1,7 @@
 <h2>Edit the form of your property</h2>
 
-<form id="share_property" method="post" action="/properties/<%= @property.id %>">
+
+<form id="share_property" method="post" action="/properties/<%= @property.id %>" enctype="multipart/form-data">
 
 <div class="form-group">
   <label for="profile_pic">Pictures </label>
