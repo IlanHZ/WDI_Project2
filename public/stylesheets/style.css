@@ -1,16 +1,18 @@
 body { background-image: url("../images/background.jpg"); background-size: cover; }
 
-.navbar { background-color: rgba(0, 0, 0, 0.1); border-color: #E7E7E7; margin-top: 50px; }
+.navbar { background-color: rgba(0, 0, 0, 0.1); border-color: #E7E7E7; margin-top: 10px; }
 
-button { background-color: rgba(0, 0, 0, 0.1); border-color: white; margin: 60px; margin-left: 105px; width: 400px; height: 60px; }
+button { background-color: rgba(0, 0, 0, 0.2); border-color: white; margin: 60px; margin-left: 105px; width: 400px; height: 60px; }
 button a { color: white; text-decoration: none; }
 button a:hover { text-decoration: none; color: white; font-weight: bold; }
 
+.container-fluid { height: 0px; }
+
 .thumbnails { background-color: blue; }
 
-#title { font-size: 100px; color: #FFF; text-align: center; }
+#title { font-size: 100px; color: #FFF; text-align: center; text-shadow: 4px 4px 2px #a5a5a5; }
 
-#logo { width: 120px; height: 120px; }
+#logo { width: 100px; height: 100px; margin-top: -20px; }
 
 img { height: 300px; width: 300px; }
 

@@ -1,17 +1,24 @@
-<h2><%= @user.username %></h2>
-<% if @user.profile_pic_identifier %>
-  <img class="media-object" src="/uploads/<%= @user.profile_pic_identifier %>" alt="<%= @user.username %>'s image">
-<% else %>
-  <img class="media-object" src="/images/default.png" alt="<%= @user.username %>'s image">
-<% end %>
-<p>First name: <%= @user.first_name %></p>
-<p>Last name: <%= @user.last_name %></p>
-<p>Email: <%= @user.email %></p>
-<p>Gender: <%= @user.gender %></p>
-<p>Age: <%= @user.age %></p>
-<p>Comment: <%= @user.comment %></p>
 
 
-<button><a href="/messages/new?recipient_id=<%= @user.id %>">Get in touch </a></button>
 
-
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <% if @user.profile_pic_identifier %>
+        <img class="media-object" src="/uploads/<%= @user.profile_pic_identifier %>" alt="<%= @user.username %>'s image">
+      <% else %>
+        <img class="media-object" src="/images/default.png" alt="<%= @user.username %>'s image">
+      <% end %>
+      <div class="caption">
+        <h2><%= @user.username %></h2>
+        <p>First name: <%= @user.first_name %></p>
+        <p>Last name: <%= @user.last_name %></p>
+        <p>Email: <%= @user.email %></p>
+        <p>Gender: <%= @user.gender %></p>
+        <p>Age: <%= @user.age %></p>
+        <p>Comment: <%= @user.comment %></p>
+        <p><a href="/messages/new?recipient_id=<%= @user.id %>" class="btn btn-primary" role="button">Get in touch </a></p>
+      </div>
+    </div>
+  </div>
+</div>
