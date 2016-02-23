@@ -1,7 +1,11 @@
 <div class="row">
   <div class="thumbnail">
     <div class="col-md-6">Property Informations
-      <img class="media-object" src="/images/default.png" >
+      <% if @property.profile_pic_identifier %>
+        <img class="media-object" src="/uploads/<%= @property.profile_pic_identifier %>">
+      <% else %>
+        <img class="media-object" src="/images/default.png">
+      <% end %>
       
       <p>Price: <%= @property.price %></p>
       <p>Property type: <%= @property.property_type %></p>
@@ -9,7 +13,11 @@
       <p>Comments: <%= @property.comment %></p>
     </div>
     <div class="col-md-6">Owner Profile 
-     <img class="media-object" src="/images/default.png" >
+     <% if @property.user.profile_pic_identifier %>
+       <img class="media-object" src="/uploads/<%= @property.user.profile_pic_identifier %>">
+     <% else %>
+       <img class="media-object" src="/images/default.png">
+     <% end %>
 
       <p>First Name: <%= @property.user.first_name %> </p>
       <p>Last Name: <%= @property.user.last_name %> </p> 

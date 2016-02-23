@@ -11,27 +11,23 @@
 
   <div class="form-group">
     <label for="property_type">Type of property</label>
-    <input name="property[property_type]" type="text" class="form-control" id="type" placeholder="Flat, house,...">
-  </div>
-  <div class="form-group">
-    <label for="owner">Owner: <%= current_user.username %></label>
-    <!-- <input name="property[owner]" type="text" class="form-control" id="owner" placeholder="Owner"> -->
-  </div>
+    <input name="property[property_type]" type="text" class="form-control" id="type" placeholder="Flat, house,..." value="<%= @property.property_type %>">
+
   <div class="form-group">
     <label for="address">Address</label>
-    <input name="property[address]" type="text" class="form-control" id="address" placeholder="address">
+    <input name="property[address]" type="text" class="form-control" id="address" placeholder="address" value="<%= @property.address%>">
   </div>
   <div class="form-group">
     <label for="">Number of free rooms</label>
-    <input name="property[number_of_rooms]" type="number" class="form-control" id="number_of_rooms" placeholder="number of rooms">
+    <input name="property[number_of_rooms]" type="number" class="form-control" id="number_of_rooms" placeholder="number of rooms" value="<%= @property.number_of_rooms %>">
   </div>
   <div class="form-group">
     <label for="price">Price</label>
-    <input name="property[price]" type="number" class="form-control" id="price" placeholder="Price">
+    <input name="property[price]" type="number" class="form-control" id="price" placeholder="Price" value="<%= @property.price %>">
   </div>
   <div class="form-group">
     <label for="comment">Comments</label>
-    <input name="property[comment]" type="text" class="form-control" id="comment" placeholder="Comments">
+    <input name="property[comment]" type="text" class="form-control" id="comment" placeholder="Comments" value="<%= @property.comment%>">
   </div>
 
   <button type="submit" class="btn btn-default"> Edit your property form </button>
