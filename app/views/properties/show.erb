@@ -1,11 +1,11 @@
 <div class="row">
   <div class="thumbnail">
     <div class="col-md-6">Property Informations
-      <% if @property.profile_pic_identifier %>
-        <img class="media-object" src="/uploads/<%= @property.profile_pic_identifier %>">
-      <% else %>
-        <img class="media-object" src="/images/default.png">
-      <% end %>
+     <% if @property.profile_pic_identifier %>
+       <img class="media-object" src="/uploads/<%= @property.profile_pic_identifier %>">
+     <% else %>
+       <img class="media-object" src="/images/default.png">
+     <% end %>
       
       <p>Price: <%= @property.price %></p>
       <p>Property type: <%= @property.property_type %></p>
