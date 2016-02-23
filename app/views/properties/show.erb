@@ -9,17 +9,10 @@
       <p>Comments: <%= @property.comment %></p>
     </div>
     <div class="col-md-6">Owner Profile 
-      <img class="media-object" src="/images/default.png" >
+     <img class="media-object" src="/images/default.png" >
 
-    <!--   <p>User Name: <%= @property.user.username %> </p>
       <p>First Name: <%= @property.user.first_name %> </p>
-      <p>Last Name: <%= @property.user.last_name %> </p>
-      <p>Email: <%= @property.user.email %> </p>
-      <p>Gender: <%= @property.user.gender %> </p>
-      <p>Image: <%= @property.user.image %> </p>
-      <p>Comments: <%= @property.user.comment %> </p> -->
-      <p>First Name: <%= @property.user.first_name %> </p>
-      <p>Last Name: <%= @property.user.last_name %> </p>
+      <p>Last Name: <%= @property.user.last_name %> </p> 
       <button><a href="/users/<%= @property.user.id %>">Check the owner's profil </a></button>
 
     </div>
@@ -27,5 +20,4 @@
     
   </div>
 </div>
-
 
