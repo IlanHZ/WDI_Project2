@@ -1,3 +1,9 @@
+body { background-size: cover; }
+
+.thumbnails { background-color: blue; }
+
+#title { font-size: 100px; text-align: center; }
+
 #logo { width: 120px; height: 120px; }
 
 img { height: 300px; width: 300px; }

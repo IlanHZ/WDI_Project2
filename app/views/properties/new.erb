@@ -3,18 +3,16 @@
 
 <form id="share_property" method="post" action="/properties" enctype="multipart/form-data">
 
-<div class="form-group">
-  <label for="profile_pic">Pictures </label>
-  <input name="property[profile_pic]" type="file" class="form-control" id="profile_pic" placeholder="pictures">
-</div>
-
+  <div class="form-group">
+    <label for="owner">Owner: <%= current_user.username %></label>
+  </div>
+  <div class="form-group">
+    <label for="profile_pic">Pictures </label>
+    <input name="property[profile_pic]" type="file" class="form-control" id="profile_pic"   placeholder="pictures">
+  </div>
   <div class="form-group">
     <label for="property_type">Type of property</label>
     <input name="property[property_type]" type="text" class="form-control" id="type" placeholder="Flat, house,...">
-  </div>
-  <div class="form-group">
-    <label for="owner">Owner: <%= current_user.username %></label>
-    <!-- <input name="property[owner]" type="text" class="form-control" id="owner" placeholder="Owner"> -->
   </div>
   <div class="form-group">
     <label for="address">Address</label>

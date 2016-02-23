@@ -1,19 +1,22 @@
 <div class="row">
   <ul class="media-list">
-    <div class="thumbnail">
+    
       <div class="col-md-6">Property Informations
-       <% if @property.profile_pic_identifier %>
-         <img class="media-object" src="/uploads/<%= @property.profile_pic_identifier %>">
-       <% else %>
-         <img class="media-object" src="/images/default.png">
-       <% end %>
-        
-        <p>Price: <%= @property.price %></p>
-        <p>Property type: <%= @property.property_type %></p>
-        <p>Number of free rooms: <%= @property.number_of_rooms %></p>
-        <p>Comments: <%= @property.comment %></p>
+        <div class="thumbnail">
+         <% if @property.profile_pic_identifier %>
+           <img class="media-object" src="/uploads/<%= @property.profile_pic_identifier %>">
+         <% else %>
+           <img class="media-object" src="/images/default.png">
+         <% end %>
+          
+          <p>Price: <%= @property.price %></p>
+          <p>Property type: <%= @property.property_type %></p>
+          <p>Number of free rooms: <%= @property.number_of_rooms %></p>
+          <p>Comments: <%= @property.comment %></p>
+        </div>
       </div>
       <div class="col-md-6">Owner Profile 
+        <div class="thumbnail">
        <% if @property.user.profile_pic_identifier %>
          <img class="media-object" src="/uploads/<%= @property.user.profile_pic_identifier %>">
        <% else %>
