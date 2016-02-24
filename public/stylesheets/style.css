@@ -50,4 +50,8 @@ ul, li { list-style-type: none; }
 
 a.readMore { height: 48px; color: white; font-size: 20px; margin: 0 auto; text-align: center; float: right; }
 
+#search_button { width: 100px; height: 40px; }
+
+#back_search_button { height: 40px; }
+
 /*# sourceMappingURL=style.css.map */

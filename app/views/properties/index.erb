@@ -1,8 +1,9 @@
 <h2>All properties</h2>
-
+<h4>Filter by address, postcode or city: </h4>
 <form id="search-form" class="form-inline" action="/properties">
   <input type="text" name="search" placeholder="Search" value="<%= params[:search] %>" class="form-control">
-  <button class="btn btn-default">Go</button>
+  <button class="btn btn-primary" id="search_button">Go</button>
+  <a href="/properties" class="btn btn-primary" role="button" id="back_search_button"> Back to all properties </a>
 </form>
 
 <div class="row">
@@ -19,7 +20,7 @@
               <% end %>
               <div class="caption">
                 <h3 class="media-heading"><%= property.owner%></h3>
-                <p><%= property.price %></p>
+                <p><%= property.price %> £</p>
                 <p><a href="/properties/<%= property.id %>" class="btn btn-primary" role="button">  Check all the informations about this property </a></p>
               </div>
             </div>
