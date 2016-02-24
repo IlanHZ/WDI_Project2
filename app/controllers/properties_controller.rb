@@ -2,7 +2,11 @@
 
 get "/properties" do
   authorize!
-  @properties = Property.all
+  if params[:search] && !params[:search].empty?
+    @properties = Property.where("address1 ILIKE :search OR postcode ILIKE :search OR city ILIKE :search", { search: "%#{params[:search]}%" })
+  else
+    @properties = Property.all
+  end 
   erb :"properties/index"
 end
 

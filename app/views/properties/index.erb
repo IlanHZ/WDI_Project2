@@ -1,4 +1,10 @@
 <h2>All properties</h2>
+
+<form id="search-form" class="form-inline" action="/properties">
+  <input type="text" name="search" placeholder="Search" value="<%= params[:search] %>" class="form-control">
+  <button class="btn btn-default">Go</button>
+</form>
+
 <div class="row">
   <ul class="media-list">
     <% @properties.each do |property| %>
