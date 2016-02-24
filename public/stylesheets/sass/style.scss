@@ -2,7 +2,6 @@ body {
   background-image: url("../images/background.jpg");
   background-size: cover;
   color:white;
-  
 }
 
 .navbar{
@@ -20,48 +19,57 @@ button{
   height: 60px;
   color:white;
   font-size: 20px;
-
 }
 
 .btn-primary {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.43);
   border: 2px solid white
-  }
+}
 
 .btn-primary:hover {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.43);
   border: 3px solid white
-  }
+}
 
-  #register {
-    border: 3px solid white;
-    padding: 77px;
-    margin: 117px;
-    margin-top: 58px;
-    background-color: rgba(0, 0, 0, 0.2);
-  }
+#register {
+  border: 3px solid white;
+  padding: 77px;
+  margin: 117px;
+  margin-top: 58px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
 
+#new_message{
+  border: 3px solid white;
+  padding: 77px;
+  margin: 117px;
+  margin-top: 58px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
 
-      
-
-
-
+#share_property{
+  border: 3px solid white;
+  padding: 77px;
+  margin: 117px;
+  margin-top: 58px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
 
 .container-fluid {
   height: 0px;
 }
 
-
 .thumbnail {
   background-color: rgba(0,0,0,0.3);
-  
+  border: 2px solid white;
 }
 
 .thumbnail .caption{
   color:white;
 }
+
 #title {
   font-size: 100px;
   color: #FFF;
