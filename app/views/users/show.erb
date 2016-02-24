@@ -3,7 +3,7 @@
 
 <div class="row">
   <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
+    <div class="thumbnail" id="user_show">
       <% if @user.profile_pic_identifier %>
         <img class="media-object" src="/uploads/<%= @user.profile_pic_identifier %>" alt="<%= @user.username %>'s image">
       <% else %>
