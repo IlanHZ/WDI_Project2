@@ -22,6 +22,13 @@ post "/properties" do
   end
 end
 
+# MAPS
+get "/properties/map" do
+   @properties = Property.all
+  erb :'properties/map'
+end
+
+
 # SHOW
 get "/properties/:id" do
   @property = Property.find(params[:id])
@@ -47,3 +54,4 @@ put '/properties/:id' do
     erb :"properties/show"
   end
 end
+
