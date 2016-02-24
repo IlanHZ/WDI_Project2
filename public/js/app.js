@@ -33,10 +33,10 @@ $(function() {
         position: { lat: property.lat, lng: property.lng},
         content: '<div class="info-window">' +
           '<h4>' + property.address1 + '</h4>' + 
+          '<h5>' + property.price +'£'+ '</h5>' +
             '<form action="/properties/' + property.id + '" method="POST">' +
               '<input type="hidden" name="_method" value="DELETE">' +
-              '<a class="btn btn-primary" href="/properties/' + property.id + '">Edit</a>' + 
-              '<button class="btn btn-secondary">Delete</button>' +
+              '<a class="btn btn-primary" href="/properties/' + property.id + '">More informations about this property</a>' + 
             '<form>' +
           '</div>'
       });
