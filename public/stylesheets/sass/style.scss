@@ -10,6 +10,17 @@ body {
     margin-top: 10px;
 }
 
+#button_home {
+  background-color: rgba(0,0,0,0.2);
+  border-color: white;
+  margin: 60px;
+  margin-left: 105px;
+  width: 400px;
+  height: 60px;
+  color:white;
+  font-size: 20px;
+}
+
 button{
   background-color: rgba(0,0,0,0.2);
   border-color: white;
@@ -19,6 +30,9 @@ button{
   height: 60px;
   color:white;
   font-size: 20px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .btn-primary {
@@ -49,13 +63,15 @@ button{
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-#share_property{
+#property{
   border: 3px solid white;
   padding: 77px;
   margin: 117px;
   margin-top: 58px;
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+
 
 .container-fluid {
   height: 0px;
@@ -100,4 +116,6 @@ ul, li {
 .info-window {
   color:black;
 }
+
+
 

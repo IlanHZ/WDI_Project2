@@ -2,7 +2,9 @@ body { background-image: url("../images/background.jpg"); background-size: cover
 
 .navbar { background-color: rgba(0, 0, 0, 0.1); border-color: #E7E7E7; margin-top: 10px; }
 
-button { background-color: rgba(0, 0, 0, 0.2); border-color: white; margin: 60px; margin-left: 105px; width: 400px; height: 60px; color: white; font-size: 20px; }
+#button_home { background-color: rgba(0, 0, 0, 0.2); border-color: white; margin: 60px; margin-left: 105px; width: 400px; height: 60px; color: white; font-size: 20px; }
+
+button { background-color: rgba(0, 0, 0, 0.2); border-color: white; margin: 60px; margin-left: 105px; width: 400px; height: 60px; color: white; font-size: 20px; width: 100%; margin: 0 auto; text-align: center; }
 
 .btn-primary { color: #fff; background-color: rgba(0, 0, 0, 0.43); border: 2px solid white; }
 
@@ -12,7 +14,7 @@ button { background-color: rgba(0, 0, 0, 0.2); border-color: white; margin: 60px
 
 #new_message { border: 3px solid white; padding: 77px; margin: 117px; margin-top: 58px; background-color: rgba(0, 0, 0, 0.2); }
 
-#share_property { border: 3px solid white; padding: 77px; margin: 117px; margin-top: 58px; background-color: rgba(0, 0, 0, 0.2); }
+#property { border: 3px solid white; padding: 77px; margin: 117px; margin-top: 58px; background-color: rgba(0, 0, 0, 0.2); }
 
 .container-fluid { height: 0px; }
 
