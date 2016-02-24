@@ -12,7 +12,7 @@ post '/login' do
   if user && user.authenticate(params[:user][:password])
     #log the user in (use " " if we use #{})
     session[:user_id] = user.id
-    flash[:success] = "Welcome!"
+    # flash[:success] = "Welcome!"
     redirect "/"
   # otherwise render the login form again
   else
