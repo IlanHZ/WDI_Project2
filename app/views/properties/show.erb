@@ -9,9 +9,12 @@
            <img class="media-object" src="/images/default.png">
          <% end %>
           
-          <p>Price: <%= @property.price %></p>
+          <p>Price: <%= @property.price %> £ </p>
           <p>Property type: <%= @property.property_type %></p>
           <p>Number of free rooms: <%= @property.number_of_rooms %></p>
+          <p>Address: <%= @property.address1 %></p>
+          <p>Postcode: <%= @property.postcode %></p>
+          <p>City: <%= @property.city %></p>
           <p>Comments: <%= @property.comment %></p>
         </div>
       </div>
