@@ -1,6 +1,10 @@
 body { background-image: url("../images/background.jpg"); background-size: cover; color: white; }
 
-.navbar { background-color: rgba(0, 0, 0, 0.1); border-color: #E7E7E7; margin-top: 10px; }
+h2 { text-shadow: 2px 2px 1px #a5a5a5; }
+
+h3 { text-shadow: 2px 2px 1px #a5a5a5; }
+
+.navbar { background-color: rgba(0, 0, 0, 0.1); border-color: #E7E7E7; margin-top: 30px; }
 
 #button_home { background-color: rgba(0, 0, 0, 0.2); border-color: white; margin: 60px; margin-left: 105px; width: 400px; height: 60px; color: white; font-size: 20px; }
 
@@ -39,5 +43,7 @@ ul, li { list-style-type: none; }
 .navbar-inverse .navbar-brand { color: #873f36; }
 
 .navbar-brand { font-family: 'Quicksand', sans-serif; font-size: 30px; color: white; }
+
+.navbar-inverse .navbar-nav > li > a { color: #873f36; }
 
 /*# sourceMappingURL=style.css.map */

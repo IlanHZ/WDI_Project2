@@ -4,10 +4,18 @@ body {
   color:white;
 }
 
+h2  {
+  text-shadow: 2px 2px 1px rgba(165, 165, 165, 1);
+}
+
+h3 {
+  text-shadow: 2px 2px 1px rgba(165, 165, 165, 1);
+}
+
 .navbar{
     background-color: rgba(0,0,0,0.1);
     border-color: #E7E7E7;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 #button_home {
@@ -70,8 +78,6 @@ button{
   margin-top: 58px;
   background-color: rgba(0, 0, 0, 0.2);
 }
-
-
 
 .container-fluid {
   height: 0px;
@@ -136,4 +142,6 @@ ul, li {
   color:white;
 }
 
-
+.navbar-inverse .navbar-nav>li>a {
+    color: hsl(7, 43%, 37%);
+}
