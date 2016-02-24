@@ -1,6 +1,7 @@
 # INDEX
 
 get "/messages" do
+  authorize!
   @messages = current_user.received_messages
   erb :"messages/index"
 end

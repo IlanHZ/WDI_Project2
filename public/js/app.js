@@ -93,10 +93,10 @@ $(function() {
               // Check to see if the content is visible.
               if (hiddenContent.is( ":visible" )){
                   // Hide it slowly.
-                  hiddenContent.slideUp( 3000 );
+                  hiddenContent.slideUp( 2000 );
               } else {
                   // Show it slowly.
-                  hiddenContent.slideDown( 6000 );
+                  hiddenContent.slideDown( 9000 );
               }
           }
       );

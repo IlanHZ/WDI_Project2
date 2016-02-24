@@ -1,6 +1,7 @@
 # INDEX
 
 get "/properties" do
+  authorize!
   @properties = Property.all
   erb :"properties/index"
 end
@@ -23,7 +24,9 @@ post "/properties" do
 end
 
 # MAPS
+
 get "/properties/map" do
+  authorize!
    @properties = Property.all
   erb :'properties/map'
 end
