@@ -1,1 +1,11 @@
-<h1>hello</h1>
+<h1>Property Map</h1>
+
+<input type="hidden" name="property-data" value='<%= @properties.to_json %>'
+
+<form id="search-form" class="form-inline" action="/properties/map">
+  <input type="text" name="search" placeholder="Search" value="<%= params[:search] %>" class="form-control">
+  <button class="btn btn-default">Go</button>
+</form>
+
+<a href="/properties/new" class="btn btn-primary">Add new property</a>
+<div id="property-map"></div>
