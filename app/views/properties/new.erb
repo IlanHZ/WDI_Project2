@@ -1,10 +1,8 @@
 <h2>Describe your property</h2>
 <h3>Share it with the rest of the community!</h3>
-t.string  "city"
-t.string  "postcode"
-t.float   "lat"
-t.float   "lng"
-<form id="share_property" method="post" action="/properties" enctype="multipart/form-data">
+
+<form id="property" method="post" action="/properties" enctype="multipart/form-data">
+
 
   <div class="form-group">
     <label for="owner">Owner: <%= current_user.username %></label>
