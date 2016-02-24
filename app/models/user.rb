@@ -1,3 +1,4 @@
+# require 'bcrypt'
 require 'carrierwave/orm/activerecord'
 require_relative '../uploaders/profile_pic_uploader'
 

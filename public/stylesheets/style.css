@@ -32,8 +32,12 @@ ul, li { list-style-type: none; }
 
 #user_show { width: 100%; margin: 50px; margin-left: 394px; text-align: center; }
 
-#property-map { height: 600px; margin: 20px 0; }
+#property-map { height: 500px; margin: 20px 0; border-radius: 10%; border: 2px solid white; box-shadow: 4px 4px 2px #a5a5a5; }
 
 .info-window { color: black; }
+
+.navbar-inverse .navbar-brand { color: #873f36; }
+
+.navbar-brand { font-family: 'Quicksand', sans-serif; font-size: 30px; color: white; }
 
 /*# sourceMappingURL=style.css.map */
