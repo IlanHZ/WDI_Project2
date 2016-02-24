@@ -32,7 +32,7 @@ button { background-color: rgba(0, 0, 0, 0.2); border-color: white; margin: 60px
 
 #logo { width: 100px; height: 100px; margin-top: -20px; }
 
-img { height: 300px; width: 300px; }
+img { height: 230px; width: 250px; margin: 0 auto; }
 
 ul, li { list-style-type: none; }
 
