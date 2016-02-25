@@ -96,7 +96,7 @@ button{
 }
 
 .thumbnail {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.6);
   border: 2px solid white;
   margin-top: 20px;
 
@@ -118,6 +118,7 @@ img {
   height: 230px;
   width: 250px;
   margin: 0 auto;
+  border-radius: 6%;
 }
 
 ul, li {
@@ -189,10 +190,7 @@ a.readMore {
 
 
 
-
-/*=========================
-  Icons
- ================= */
+//////////////////// SOCIAL MEDIA BUTTON //////////////////////////////////////
 
 #social_button {
   text-align: center;
@@ -209,7 +207,10 @@ ul.social-network li {
   display: inline;
   margin: 0 5px;
 }
-
+.social-network a {
+  border: 1px solid white;
+  background-color: rgba(0,0,0,0.2);
+}
 
 /* footer social icons */
 .social-network a.icoRss:hover {
