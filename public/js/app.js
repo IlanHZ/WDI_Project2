@@ -96,7 +96,7 @@ $(function() {
                   hiddenContent.slideUp( 2000 );
               } else {
                   // Show it slowly.
-                  hiddenContent.slideDown( 9000 );
+                  hiddenContent.slideDown( 4000 );
               }
           }
       );
