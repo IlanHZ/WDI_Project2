@@ -59,6 +59,8 @@ a.readMore { height: 48px; color: #873f36; font-size: 20px; margin: 0 auto; text
 #copy { bottom: 0; }
 
 /*========================= Icons ================= */
+#social_button { text-align: center; }
+
 /* footer social icons */
 ul.social-network { list-style: none; display: inline; margin-left: 0 !important; padding: 0; }
 
