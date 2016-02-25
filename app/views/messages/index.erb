@@ -12,10 +12,8 @@
             <p><a href="/users/<%= message.sender_id %>" class="btn btn-primary" role="button">Link to the sender profile </a></p>
             <form method="post" action="/messages/<%= message.id %>">
                 <input type="hidden" name="_method" value="delete">
-                <button>Delete</button>
+                <button class="btn btn-primary" >Delete</button>
             </form>
-
-
           </li>
         </div>
       </div>

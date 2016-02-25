@@ -9,7 +9,7 @@
            <img class="media-object" src="/images/default.png">
          <% end %>
           
-          <p>Price: <%= @property.price %> £ </p>
+          <p>Monthly price: <%= @property.price %> £ </p>
           <p>Property type: <%= @property.property_type %></p>
           <p>Number of free rooms: <%= @property.number_of_rooms %></p>
           <p>Address: <%= @property.address1 %></p>
@@ -17,7 +17,9 @@
           <p>City: <%= @property.city %></p>
           <p>Comments: <%= @property.comment %></p>
         </div>
+
       </div>
+
       <div class="col-md-6"><h2>Owner Profile </h2>
         <div class="thumbnail">
        <% if @property.user.profile_pic_identifier %>
@@ -29,7 +31,8 @@
         <p>First Name: <%= @property.user.first_name %> </p>
         <p>Last Name: <%= @property.user.last_name %> </p> 
       </div>
-      <p><a href="/users/<%= @property.user.id %>" class="btn btn-primary" >Check  <%= @property.user.username%> full profile </a></p>
+      <p><a href="/users/<%= @property.user.id %>" class="btn btn-primary" >Check  <%= @property.user.username%> full profile </a>
+      <a href="/properties/map" class="btn btn-primary" > Find this property on the map</a></p>
     </div>
   </ul>
 </div>

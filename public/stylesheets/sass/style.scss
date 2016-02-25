@@ -9,12 +9,8 @@ h2  {
   text-shadow: 2px 2px 1px rgba(165, 165, 165, 1);
 }
 
-// h3 {
-//   text-shadow: 2px 2px 1px rgba(165, 165, 165, 1);
-// }
-
 a:focus, a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
  #title {
@@ -27,10 +23,10 @@ a:focus, a:hover {
 }
 
 .navbar{
-    background-color: rgba(0,0,0,0.1);
-    border-color: #E7E7E7;
-    margin-top: 30px;
-    font-size: 20px;
+  background-color: rgba(0,0,0,0.1);
+  border-color: #E7E7E7;
+  margin-top: 30px;
+  font-size: 20px;
 }
 
 #button_home {
@@ -113,15 +109,15 @@ button{
 
 
 #logo {
-    width: 100px;
-    height: 100px;
-    margin-top: -20px;
+  width: 100px;
+  height: 100px;
+  margin-top: -20px;
 }
 
 img {
-    height: 230px;
-    width: 250px;
-    margin: 0 auto;
+  height: 230px;
+  width: 250px;
+  margin: 0 auto;
 }
 
 ul, li {
@@ -147,7 +143,7 @@ ul, li {
   color:black;
 }
 .navbar-inverse .navbar-brand {
-    color: hsl(7, 43%, 37%);
+  color: hsl(7, 43%, 37%);
   }
 .navbar-brand {
   font-family: 'Quicksand', sans-serif;
@@ -156,7 +152,7 @@ ul, li {
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    color: hsl(7, 43%, 37%);
+  color: hsl(7, 43%, 37%);
 }
 
 a.readMore {
@@ -184,6 +180,10 @@ a.readMore {
 #about_text{
   color: hsl(7, 43%, 37%);
   font-size: 20px;
+}
+
+#copy {
+  bottom:0;
 }
 
 
