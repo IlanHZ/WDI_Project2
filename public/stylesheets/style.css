@@ -2,8 +2,6 @@ body { background-image: url("../images/background.jpg"); background-size: cover
 
 h2 { text-shadow: 2px 2px 1px #a5a5a5; }
 
-h3 { text-shadow: 2px 2px 1px #a5a5a5; }
-
 a:focus, a:hover { text-decoration: none; }
 
 #title { clear: both; font-size: 100px; color: #FFF; text-align: center; text-shadow: 4px 4px 2px #a5a5a5; margin: 0; }
