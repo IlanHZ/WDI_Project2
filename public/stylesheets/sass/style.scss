@@ -68,7 +68,7 @@ button{
 .btn-primary:hover {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.43);
-  border: 3px solid white
+  border: 2px solid white
 }
 
 #register {
@@ -168,6 +168,10 @@ a.readMore {
   float: right;
 }
 
+.content {
+  color: hsl(7, 43%, 37%);
+}
+
 #search_button {
   width:100px;
   height: 40px;
@@ -176,9 +180,6 @@ a.readMore {
 #back_search_button {
   height: 40px;
 }
-
-
-
 
 
 

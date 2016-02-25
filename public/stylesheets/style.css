@@ -14,7 +14,7 @@ button { background-color: rgba(0, 0, 0, 0.2); border-color: white; margin: 60px
 
 .btn-primary { color: #fff; background-color: rgba(0, 0, 0, 0.43); border: 2px solid white; }
 
-.btn-primary:hover { color: #fff; background-color: rgba(0, 0, 0, 0.43); border: 3px solid white; }
+.btn-primary:hover { color: #fff; background-color: rgba(0, 0, 0, 0.43); border: 2px solid white; }
 
 #register { border: 3px solid white; padding: 77px; margin: 117px; margin-top: 58px; background-color: rgba(0, 0, 0, 0.2); }
 
@@ -47,6 +47,8 @@ ul, li { list-style-type: none; }
 .navbar-inverse .navbar-nav > li > a { color: #873f36; }
 
 a.readMore { height: 48px; color: #873f36; font-size: 20px; margin: 0 auto; text-align: center; float: right; }
+
+.content { color: #873f36; }
 
 #search_button { width: 100px; height: 40px; }
 
