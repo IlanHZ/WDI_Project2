@@ -56,7 +56,7 @@ a.readMore { height: 48px; color: #873f36; font-size: 20px; margin: 0 auto; text
 
 #about_text { color: #873f36; font-size: 20px; }
 
-#copy { bottom: 0; }
+.footer { left: 10px; bottom: 10px; position: fixed; }
 
 #social_button { text-align: center; }
 
