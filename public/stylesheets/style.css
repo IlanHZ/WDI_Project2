@@ -1,4 +1,4 @@
-body { background-image: url("../images/background.jpg"); background-size: cover; color: white; }
+body { background-image: url("../images/background.jpg"); background-size: cover; color: white; font-family: 'Quicksand', sans-serif; }
 
 h2 { text-shadow: 2px 2px 1px #a5a5a5; }
 
@@ -6,9 +6,9 @@ a:focus, a:hover { text-decoration: none; }
 
 #title { clear: both; font-size: 100px; color: #FFF; text-align: center; text-shadow: 4px 4px 2px #a5a5a5; margin: 0; }
 
-.navbar { background-color: rgba(0, 0, 0, 0.1); border-color: #E7E7E7; margin-top: 30px; }
+.navbar { background-color: rgba(0, 0, 0, 0.1); border-color: #E7E7E7; margin-top: 30px; font-size: 20px; }
 
-#button_home { background-color: rgba(0, 0, 0, 0.2); border-color: white; margin: 60px; margin-left: 105px; width: 400px; height: 60px; color: white; font-size: 20px; }
+#button_home { font-family: 'Quicksand', sans-serif; background-color: rgba(0, 0, 0, 0.6); border-color: white; margin: 60px; margin-left: 105px; width: 400px; height: 60px; color: white; font-size: 20px; }
 
 button { background-color: rgba(0, 0, 0, 0.2); border-color: white; margin: 60px; margin-left: 105px; width: 400px; height: 60px; color: white; font-size: 20px; width: 100%; margin: 0 auto; text-align: center; }
 
@@ -24,7 +24,7 @@ button { background-color: rgba(0, 0, 0, 0.2); border-color: white; margin: 60px
 
 .container-fluid { height: 0px; }
 
-.thumbnail { background-color: rgba(0, 0, 0, 0.3); border: 2px solid white; }
+.thumbnail { background-color: rgba(0, 0, 0, 0.3); border: 2px solid white; margin-top: 20px; }
 
 .thumbnail .caption { color: white; }
 
@@ -46,7 +46,7 @@ ul, li { list-style-type: none; }
 
 .navbar-inverse .navbar-nav > li > a { color: #873f36; }
 
-a.readMore { height: 48px; color: white; font-size: 20px; margin: 0 auto; text-align: center; float: right; }
+a.readMore { height: 48px; color: #873f36; font-size: 20px; margin: 0 auto; text-align: center; float: right; }
 
 #search_button { width: 100px; height: 40px; }
 

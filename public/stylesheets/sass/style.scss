@@ -2,6 +2,7 @@ body {
   background-image: url("../images/background.jpg");
   background-size: cover;
   color:white;
+  font-family: 'Quicksand', sans-serif;
 }
 
 h2  {
@@ -29,10 +30,12 @@ a:focus, a:hover {
     background-color: rgba(0,0,0,0.1);
     border-color: #E7E7E7;
     margin-top: 30px;
+    font-size: 20px;
 }
 
 #button_home {
-  background-color: rgba(0,0,0,0.2);
+  font-family: 'Quicksand', sans-serif;
+  background-color: rgba(0,0,0,0.6);
   border-color: white;
   margin: 60px;
   margin-left: 105px;
@@ -99,6 +102,8 @@ button{
 .thumbnail {
   background-color: rgba(0,0,0,0.3);
   border: 2px solid white;
+  margin-top: 20px;
+
 }
 
 .thumbnail .caption{
@@ -156,7 +161,7 @@ ul, li {
 
 a.readMore {
   height: 48px;
-  color: white;
+  color: hsl(7, 43%, 37%);
   font-size: 20px;
   margin: 0 auto;
   text-align: center;
