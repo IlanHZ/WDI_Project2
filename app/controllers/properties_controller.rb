@@ -52,6 +52,8 @@ get "/properties/:id/edit" do
   erb :"properties/edit"
 end
 
+
+
 # UPDATE
 put '/properties/:id' do
   @property = Property.find(params[:id])

@@ -1,5 +1,6 @@
 $(function() {
 
+
   var $propertyForm = $('form#property');
   var $map = $('#property-map');
   var $markers = [];
