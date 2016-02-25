@@ -43,6 +43,14 @@ get "/messages/:id/edit" do
   erb :"messages/edit"
 end
 
+# MESSAGES
+delete "/messages/:id" do
+  @message = Message.find(params[:id])
+  @message.destroy
+
+  redirect "/messages"
+end
+
 # UPDATE
 put '/messages/:id' do
   @message = Message.find(params[:id])

@@ -10,6 +10,10 @@
             <p>Subject: <%= message.title %></p>   
             <p>Message: <%= message.message_content %></p>
             <p><a href="/users/<%= message.sender_id %>" class="btn btn-primary" role="button">Link to the sender profile </a></p>
+            <form method="post" action="/messages/<%= message.id %>">
+                <input type="hidden" name="_method" value="delete">
+                <button>Delete</button>
+            </form>
 
           </li>
         </div>
