@@ -106,8 +106,6 @@ button{
   color:white;
 }
 
-
-
 #logo {
   width: 100px;
   height: 100px;
@@ -137,15 +135,16 @@ ul, li {
   margin: 20px 0;
   border:2px solid white;
   box-shadow: 4px 4px 2px rgba(165, 165, 165, 1);
-
 }
 
 .info-window {
   color:black;
 }
+
 .navbar-inverse .navbar-brand {
   color: hsl(7, 43%, 37%);
-  }
+}
+
 .navbar-brand {
   font-family: 'Quicksand', sans-serif;
   font-size:30px;
@@ -189,9 +188,6 @@ a.readMore {
   position: fixed;
 }
 
-
-
-
 //////////////////// SOCIAL MEDIA BUTTON //////////////////////////////////////
 
 #social_button {
@@ -205,16 +201,18 @@ ul.social-network {
   margin-left:0 !important;
   padding: 0;
 }
+
 ul.social-network li {
   display: inline;
   margin: 0 5px;
 }
+
 .social-network a {
   border: 1px solid white;
   background-color: rgba(0,0,0,0.2);
 }
 
-/* footer social icons */
+///////////////* footer social icons *///////////////////////////////
 .social-network a.icoRss:hover {
   background-color: #F56505;
 }

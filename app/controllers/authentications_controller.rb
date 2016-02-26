@@ -1,6 +1,5 @@
 #Restfull routes For the authentications views
 
-
 # get the form
 get '/register' do 
   @user = User.new

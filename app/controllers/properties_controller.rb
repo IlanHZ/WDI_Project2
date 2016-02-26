@@ -3,8 +3,10 @@
 get "/properties" do
   authorize!
   if params[:search] && !params[:search].empty?
+    # Allows to use the search bar based on address, city, postcode
     @properties = Property.where("address1 ILIKE :search OR postcode ILIKE :search OR city ILIKE :search", { search: "%#{params[:search]}%" })
   else
+    # if not filtered, just display all of them
     @properties = Property.all
   end 
   erb :"properties/index"
@@ -19,6 +21,7 @@ end
 # CREATE
 post "/properties" do
   @property = Property.new(params[:property])
+  # the property has a one to one relation with the current user
   @property.user = current_user
   if @property.save
     redirect "/properties"
@@ -31,6 +34,7 @@ end
 
 get "/properties/map" do
   authorize!
+  # display every property on the map
    @properties = Property.all
   erb :'properties/map'
 end

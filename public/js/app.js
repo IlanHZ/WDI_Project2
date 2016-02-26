@@ -1,6 +1,8 @@
 $(function() {
 
 
+//////////////////    Google Maps   ///////////////////////////////////////////
+
   var $propertyForm = $('form#property');
   var $map = $('#property-map');
   var $markers = [];
@@ -84,40 +86,41 @@ $(function() {
 
   }
 
-      // Cache a reference to the hidden content.
-      var hiddenContent = $( "div.content" );
-      // Bind to the Read More link to toggle the
-      $( "a.readMore" ).click(
-          function( event ){
-              // Cancel the default event (this isn't a real link).
-              event.preventDefault();
-              // Check to see if the content is visible.
-              if (hiddenContent.is( ":visible" )){
-                  // Hide it slowly.
-                  hiddenContent.slideUp( 2000 );
-              } else {
-                  // Show it slowly.
-                  hiddenContent.slideDown( 4000 );
-              }
+////////////////// "How to get started" /////////////////////////////////////////////////////////////////
+
+  // Cache a reference to the hidden content.
+  var hiddenContent = $( "div.content" );
+  // Bind to the Read More link to toggle the
+  $( "a.readMore" ).click(
+      function( event ){
+          // Cancel the default event (this isn't a real link).
+          event.preventDefault();
+          // Check to see if the content is visible.
+          if (hiddenContent.is( ":visible" )){
+              // Hide it slowly.
+              hiddenContent.slideUp( 2000 );
+          } else {
+              // Show it slowly.
+              hiddenContent.slideDown( 4000 );
           }
-      );
+      }
+  );
 
-///////////////////// Scroll button ///////////////////////////////////
+///////////////////// Scroll button ///////////////////////////////////////////////////////////////////
 
-      //Check to see if the window is top if not then display button
-      $(window).scroll(function(){
-        if ($(this).scrollTop() > 100) {
-          $('.scrollToTop').fadeIn();
-        } else {
-          $('.scrollToTop').fadeOut();
-        }
-      });
-      
-      //Click event to scroll to top
-      $('.scrollToTop').click(function(){
-        $('html, body').animate({scrollTop : 0},8000);
-        return false;
-      });
-
+  //Check to see if the window is top if not then display button
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.scrollToTop').fadeIn();
+    } else {
+      $('.scrollToTop').fadeOut();
+    }
+  });
+  
+  //Click event to scroll to top
+  $('.scrollToTop').click(function(){
+    $('html, body').animate({scrollTop : 0},8000);
+    return false;
+  });
 
 });
