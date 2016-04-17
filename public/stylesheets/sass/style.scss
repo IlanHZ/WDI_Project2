@@ -308,13 +308,10 @@ a.socialIcon:hover, .socialHoverClass {
  }
 
  #button_home1 {
-  // width: 169px;
   font-size: 13px;
   margin: 0 auto;
   margin-top: 30px;
   width: 100%;
-  // margin-bottom: 213px;
-  // margin-top: 85px;
 
  }
 
@@ -325,8 +322,33 @@ a.socialIcon:hover, .socialHoverClass {
   font-size: 13px;
   margin: 0 auto;
   margin-bottom: 250px;
-  // margin-top: 85px;
 
+}
+
+ #register {
+   border: 3px solid white;
+   padding: 42px;
+   margin-top: 58px;
+   background-color: rgba(0, 0, 0, 0.2);
+ }
+
+ #property{
+   border: 3px solid white;
+   padding: 42px;
+   margin-top: 58px;
+   background-color: rgba(0, 0, 0, 0.2);
+ }
+
+ #new_message{
+   border: 3px solid white;
+   padding: 42px;
+   margin-top: 58px;
+   background-color: rgba(0, 0, 0, 0.2);
+ }
+
+ #user_show {
+   width: 100%;
+   text-align: center;
  }
 
 }
