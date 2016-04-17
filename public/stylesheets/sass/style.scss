@@ -330,6 +330,8 @@ a.socialIcon:hover, .socialHoverClass {
    padding: 42px;
    margin-top: 58px;
    background-color: rgba(0, 0, 0, 0.2);
+   width: 100%;
+   margin-left: 0;
  }
 
  #property{
@@ -337,6 +339,10 @@ a.socialIcon:hover, .socialHoverClass {
    padding: 42px;
    margin-top: 58px;
    background-color: rgba(0, 0, 0, 0.2);
+   width: 100%;
+   text-align: center;
+   margin-left: 0;
+
  }
 
  #new_message{
@@ -349,6 +355,8 @@ a.socialIcon:hover, .socialHoverClass {
  #user_show {
    width: 100%;
    text-align: center;
+   margin-left: 0;
+
  }
 
  .dropdown-toggle {
