@@ -96,6 +96,6 @@ a.socialIcon:hover, .socialHoverClass { color: #44BCDD; }
 @media (max-width: 1024px) { body { background-size: cover; }
   #title { font-size: 61px; margin-bottom: 20px; }
   #button_home1 { font-size: 13px; margin: 0 auto; margin-top: 30px; width: 100%; }
-  #button_home2 { width: 100%; margin-top: 30px; font-size: 13px; margin: 0 auto; } }
+  #button_home2 { width: 100%; margin-top: 30px; font-size: 13px; margin: 0 auto; margin-bottom: 250px; } }
 
 /*# sourceMappingURL=style.css.map */
