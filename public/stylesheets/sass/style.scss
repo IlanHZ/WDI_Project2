@@ -1,6 +1,7 @@
 body {
   background-image: url("../images/background.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   color:white;
   font-family: 'Quicksand', sans-serif;
 }
@@ -29,16 +30,34 @@ a:focus, a:hover {
   font-size: 20px;
 }
 
-#button_home {
+#button_home1 {
   font-family: 'Quicksand', sans-serif;
   background-color: rgba(0,0,0,0.6);
   border-color: white;
-  margin: 60px;
-  margin-left: 105px;
-  width: 400px;
+  // margin: 60px;
+  // margin-left: 105px;
+  // width: 400px;
   height: 60px;
   color:white;
   font-size: 20px;
+  float: right;
+  margin-top: 40px;
+  width: 73%;
+}
+
+#button_home2 {
+  font-family: 'Quicksand', sans-serif;
+  background-color: rgba(0,0,0,0.6);
+  border-color: white;
+  // margin: 60px;
+  // margin-left: 105px;
+  // width: 400px;
+  height: 60px;
+  color:white;
+  font-size: 20px;
+  float: left;
+  margin-top: 40px;
+  width: 73%;
 }
 
 button{
@@ -277,6 +296,40 @@ a.socialIcon:hover, .socialHoverClass {
   transition: all 0.8s;
 }
 
+@media (max-width: 1024px) {
+
+  body {
+    background-size: cover;
+  }
+
+ #title {
+  font-size: 61px;
+  margin-bottom: 20px;
+ }
+
+ #button_home1 {
+  // width: 169px;
+  font-size: 13px;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 100%;
+  // margin-bottom: 213px;
+  // margin-top: 85px;
+
+ }
+
+ #button_home2 {
+  // width: 169px;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 13px;
+  margin: 0 auto;
+  // margin-bottom: 213px;
+  // margin-top: 85px;
+
+ }
+
+}
 
 
 

@@ -1,4 +1,4 @@
-body { background-image: url("../images/background.jpg"); background-size: cover; color: white; font-family: 'Quicksand', sans-serif; }
+body { background-image: url("../images/background.jpg"); background-size: cover; background-repeat: no-repeat; color: white; font-family: 'Quicksand', sans-serif; }
 
 h2 { text-shadow: 2px 2px 1px #a5a5a5; }
 
@@ -8,7 +8,9 @@ a:focus, a:hover { text-decoration: none; }
 
 .navbar { background-color: rgba(0, 0, 0, 0.1); border-color: #E7E7E7; margin-top: 30px; font-size: 20px; }
 
-#button_home { font-family: 'Quicksand', sans-serif; background-color: rgba(0, 0, 0, 0.6); border-color: white; margin: 60px; margin-left: 105px; width: 400px; height: 60px; color: white; font-size: 20px; }
+#button_home1 { font-family: 'Quicksand', sans-serif; background-color: rgba(0, 0, 0, 0.6); border-color: white; height: 60px; color: white; font-size: 20px; float: right; margin-top: 40px; width: 73%; }
+
+#button_home2 { font-family: 'Quicksand', sans-serif; background-color: rgba(0, 0, 0, 0.6); border-color: white; height: 60px; color: white; font-size: 20px; float: left; margin-top: 40px; width: 73%; }
 
 button { background-color: rgba(0, 0, 0, 0.2); border-color: white; margin: 60px; margin-left: 105px; width: 400px; height: 60px; color: white; font-size: 20px; width: 100%; margin: 0 auto; text-align: center; }
 
@@ -67,7 +69,6 @@ ul.social-network li { display: inline; margin: 0 5px; }
 
 .social-network a { border: 1px solid white; background-color: rgba(0, 0, 0, 0.2); }
 
-/* footer social icons */
 .social-network a.icoRss:hover { background-color: #F56505; }
 
 .social-network a.icoFacebook:hover { background-color: #3B5998; }
@@ -91,5 +92,10 @@ a.socialIcon:hover, .socialHoverClass { color: #44BCDD; }
 .social-circle li a:hover i, .triggeredHover { -moz-transform: rotate(360deg); -webkit-transform: rotate(360deg); -ms--transform: rotate(360deg); transform: rotate(360deg); -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; -ms-transition: all 0.2s; transition: all 0.2s; }
 
 .social-circle i { color: #fff; -webkit-transition: all 0.8s; -moz-transition: all 0.8s; -o-transition: all 0.8s; -ms-transition: all 0.8s; transition: all 0.8s; }
+
+@media (max-width: 1024px) { body { background-size: cover; }
+  #title { font-size: 61px; margin-bottom: 20px; }
+  #button_home1 { font-size: 13px; margin: 0 auto; margin-top: 30px; width: 100%; }
+  #button_home2 { width: 100%; margin-top: 30px; font-size: 13px; margin: 0 auto; } }
 
 /*# sourceMappingURL=style.css.map */
