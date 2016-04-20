@@ -6,6 +6,11 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+  background-color: none !important;
+}
+
+
 h2  {
   text-shadow: 2px 2px 1px rgba(165, 165, 165, 1);
 }
@@ -367,7 +372,10 @@ a.socialIcon:hover, .socialHoverClass {
   h3 {
     font-size: 15px;
   }
-  
+ }
+
+ .navbar-inverse .navbar-nav .open .dropdown-menu>li>a{
+  color: #873f36;
  }
 
 }
