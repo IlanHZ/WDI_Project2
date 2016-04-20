@@ -97,10 +97,10 @@ a.socialIcon:hover, .socialHoverClass { color: #44BCDD; }
   #title { font-size: 61px; margin-bottom: 20px; }
   #button_home1 { font-size: 13px; margin: 0 auto; margin-top: 30px; width: 100%; }
   #button_home2 { width: 100%; margin-top: 30px; font-size: 13px; margin: 0 auto; margin-bottom: 250px; }
-  #register { border: 3px solid white; padding: 42px; margin-top: 58px; background-color: rgba(0, 0, 0, 0.2); }
-  #property { border: 3px solid white; padding: 42px; margin-top: 58px; background-color: rgba(0, 0, 0, 0.2); }
+  #register { border: 3px solid white; padding: 42px; margin-top: 58px; background-color: rgba(0, 0, 0, 0.2); width: 100% !important; margin-left: 0 !important; }
+  #property { border: 3px solid white; padding: 42px; margin-top: 58px; background-color: rgba(0, 0, 0, 0.2); width: 100% !important; text-align: center; margin-left: 0 !important; }
   #new_message { border: 3px solid white; padding: 42px; margin-top: 58px; background-color: rgba(0, 0, 0, 0.2); }
-  #user_show { width: 100%; text-align: center; }
+  #user_show { width: 100%; text-align: center; margin-left: 0; }
   .dropdown-toggle { float: right; } }
 
 /*# sourceMappingURL=style.css.map */
