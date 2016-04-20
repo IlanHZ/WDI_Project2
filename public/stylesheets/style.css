@@ -101,6 +101,7 @@ a.socialIcon:hover, .socialHoverClass { color: #44BCDD; }
   #property { border: 3px solid white; padding: 42px; margin-top: 58px; background-color: rgba(0, 0, 0, 0.2); width: 100% !important; text-align: center; margin-left: 0 !important; }
   #new_message { border: 3px solid white; padding: 42px; margin-top: 58px; background-color: rgba(0, 0, 0, 0.2); }
   #user_show { width: 100%; text-align: center; margin-left: 0; }
-  .dropdown-toggle { float: right; } }
+  .dropdown-toggle { float: right; }
+  #introText h3 { font-size: 15px; } }
 
 /*# sourceMappingURL=style.css.map */
