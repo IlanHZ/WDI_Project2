@@ -101,7 +101,7 @@ a.socialIcon:hover, .socialHoverClass { color: #44BCDD; }
   #button_home2 { width: 100%; margin-top: 30px; font-size: 13px; margin: 0 auto; margin-bottom: 250px; }
   #register { border: 3px solid white; padding: 42px; margin-top: 58px; background-color: rgba(0, 0, 0, 0.2); width: 100% !important; margin-left: 0 !important; }
   #property { border: 3px solid white; padding: 42px; margin-top: 58px; background-color: rgba(0, 0, 0, 0.2); width: 100% !important; text-align: center; margin-left: 0 !important; }
-  #new_message { border: 3px solid white; padding: 42px; margin-top: 58px; background-color: rgba(0, 0, 0, 0.2); }
+  #new_message { border: 3px solid white; padding: 42px; margin-top: 58px; background-color: rgba(0, 0, 0, 0.2); width: 100% !important; margin-left: 0 !important; }
   #user_show { width: 100%; text-align: center; margin-left: 0; }
   .dropdown-toggle { float: right; }
   #introText h3 { font-size: 15px; }
