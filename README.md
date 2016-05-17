@@ -2,6 +2,8 @@
 
 # Third Act
 
+![](http://imgur.com/OMu9Vhq.png)
+
 https://powerful-cove-58509.herokuapp.com/
 
 An app to help seniors benefiting from all the advantages of cohabitation using Sinatra,Google Maps, Bcrypt, Bower and Jquery.
